@@ -10,4 +10,7 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
+Greatest_song = Song.new(name:"Rewrite the Stars", album: "The Greatest Showman")
+
+
 DB[:conn].execute("SELECT * FROM songs")
